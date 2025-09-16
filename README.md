@@ -48,4 +48,4 @@ Siga os passos abaixo para rodar o projeto localmente:
 **1. Clone o repositório:**
 Abra seu terminal e execute o seguinte comando:
 ```bash
-git clone (https://github.com/KarineDuarte15/PedraPapelTesouraLagartoSpock.git)
+git clone https://github.com/KarineDuarte15/PedraPapelTesouraLagartoSpock.git

@@ -2,7 +2,7 @@ package br.com.pptls.jokenpo.model;
 import java.util.List;
 import java.util.Map;
 
-public enum jogada {
+public enum Jogada {
     PEDRA,
     PAPEL,
     TESOURA,

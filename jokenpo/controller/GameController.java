@@ -1,8 +1,7 @@
-package br.com.seuprojeto.jokenpo.controller;
-
-import br.com.seuprojeto.jokenpo.dto.JogadaRequest;
-import br.com.seuprojeto.jokenpo.dto.ResultadoResponse;
-import br.com.seuprojeto.jokenpo.model.Jogada;
+package br.com.pptls.jokenpo.dto;
+import br.com.pptls.jokenpo.dto.JogadaRequest;
+import br.com.pptls.jokenpo.dto.ResultadoResponse;
+import br.com.pptls.jokenpo.model.Jogada;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

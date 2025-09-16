@@ -1,4 +1,4 @@
-package br.com.seuprojeto.jokenpo.dto;
+package br.com.pptls.jokenpo.dto;
 
 
 public class JogadaRequest {

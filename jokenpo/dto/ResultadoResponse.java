@@ -1,6 +1,6 @@
-package br.com.seuprojeto.jokenpo.dto;
+package br.com.pptls.jokenpo.dto;
 
-import br.com.seuprojeto.jokenpo.model.Jogada;
+import br.com.pptls.jokenpo.model.Jogada;
 
 public class ResultadoResponse {
     private Jogada jogadaJogador;

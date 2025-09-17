@@ -1,49 +1,74 @@
 body {
     font-family: sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Fundo da tela de início */
+body.tela-inicial {
+    background: url('imagens/regras-bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fundo da tela de jogo */
+body.tela-jogo {
+    background: url('imagens/jogo-bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#inicio {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    text-align: center;
+    color: white;
 }
+
+.inicio-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+#btn-iniciar {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+#jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    width: 90%;
+    max-width: 600px;
 }
-h1 {
-    color: #333;
-}
-.opcoes {
-    margin: 2rem 0;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.btn-jogada {
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.btn-jogada:hover {
-    background-color: #0056b3;
-}
-.resultado-area {
-    margin-top: 2rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-#vencedor {
-    font-size: 1.8rem;
-    color: #28a745;
-}
+
+/* ... (restante dos seus estilos .opcoes, .btn-jogada, etc.) ... */
+.opcoes { margin: 2rem 0; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+.btn-jogada { padding: 1rem 1.5rem; font-size: 1.2rem; border: none; border-radius: 5px; background-color: #007bff; color: white; cursor: pointer; transition: background-color 0.3s; }
+.btn-jogada:hover { background-color: #0056b3; }
+.resultado-area { margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+.jogadas-display { display: flex; justify-content: space-around; margin-bottom: 1rem; }
+#vencedor { font-size: 1.8rem; color: #28a745; }
+#descricao-resultado { font-style: italic; color: #555; min-height: 20px; }
+.imagem-container { height: 150px; display: flex; justify-content: center; align-items: center; margin-top: 1rem; }
+#imagem-resultado { max-width: 100%; max-height: 150px; }

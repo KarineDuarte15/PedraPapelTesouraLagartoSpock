@@ -6,23 +6,40 @@
     <title>Jokenpo Spock</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Pedra, Papel, Tesoura, Lagarto e Spock</h1>
-        
-        <div class="opcoes">
-            <button class="btn-jogada" data-jogada="PEDRA">Pedra ✊</button>
-            <button class="btn-jogada" data-jogada="PAPEL">Papel ✋</button>
-            <button class="btn-jogada" data-jogada="TESOURA">Tesoura ✌️</button>
-            <button class="btn-jogada" data-jogada="LAGARTO">Lagarto 🦎</button>
-            <button class="btn-jogada" data-jogada="SPOCK">Spock 🖖</button>
-        </div>
+<body class="tela-inicial">
 
-        <div id="resultado" class="resultado-area">
-            <h2>Resultado</h2>
-            <p>Sua Jogada: <span id="sua-jogada">--</span></p>
-            <p>Jogada do Computador: <span id="computador-jogada">--</span></p>
-            <h3 id="vencedor">Aguardando sua jogada...</h3>
+    <div id="inicio">
+        <div class="inicio-container">
+             <h1>Pedra, Papel, Tesoura, Lagarto e Spock</h1>
+             <p>Prepare-se para o desafio!</p>
+            <button id="btn-iniciar">Iniciar Jogo</button>
+        </div>
+    </div>
+
+    <div id="jogo" class="hidden">
+        <div class="container">
+            <h1>Faça sua Jogada</h1>
+            
+            <div class="opcoes">
+                <button class="btn-jogada" data-jogada="PEDRA">Pedra ✊</button>
+                <button class="btn-jogada" data-jogada="PAPEL">Papel ✋</button>
+                <button class="btn-jogada" data-jogada="TESOURA">Tesoura ✌️</button>
+                <button class="btn-jogada" data-jogada="LAGARTO">Lagarto 🦎</button>
+                <button class="btn-jogada" data-jogada="SPOCK">Spock 🖖</button>
+            </div>
+    
+            <div id="resultado" class="resultado-area">
+                <h2>Resultado</h2>
+                <div class="jogadas-display">
+                    <p>Sua Jogada: <span id="sua-jogada">--</span></p>
+                    <p>Jogada do Computador: <span id="computador-jogada">--</span></p>
+                </div>
+                <h3 id="vencedor">Aguardando sua jogada...</h3>
+                <p id="descricao-resultado"></p>
+                <div class="imagem-container">
+                    <img id="imagem-resultado" class="hidden" src="" alt="Resultado da jogada">
+                </div>
+            </div>
         </div>
     </div>
 

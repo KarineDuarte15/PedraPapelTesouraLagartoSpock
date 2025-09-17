@@ -45,7 +45,7 @@ public class GameController {
         int resultadoComparacao = jogadaJogador.comparar(jogadaComputador);
         
         String resultadoFinal;
-        String descricao = "";
+        String descricao;
         String vitoriaKey = null;
 
         if (resultadoComparacao == 0) {

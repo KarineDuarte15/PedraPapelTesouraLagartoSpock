@@ -6,10 +6,15 @@ public class ResultadoResponse {
     private Jogada jogadaJogador;
     private Jogada jogadaComputador;
     private String resultado;
-    private String descricao; 
+    private String descricao;
     private String vitoriaKey;
 
-    public ResultadoResponse(Jogada jogadaJogador, Jogada jogadaComputador, String resultado) {
+    // Construtor padrão (boa prática)
+    public ResultadoResponse() {
+    }
+
+    // Construtor completo com TODOS os campos que precisamos
+    public ResultadoResponse(Jogada jogadaJogador, Jogada jogadaComputador, String resultado, String descricao, String vitoriaKey) {
         this.jogadaJogador = jogadaJogador;
         this.jogadaComputador = jogadaComputador;
         this.resultado = resultado;
@@ -17,7 +22,7 @@ public class ResultadoResponse {
         this.vitoriaKey = vitoriaKey;
     }
 
-    // Getters e Setters
+    // Getters e Setters para todos os campos
     public Jogada getJogadaJogador() {
         return jogadaJogador;
     }
@@ -41,16 +46,19 @@ public class ResultadoResponse {
     public void setResultado(String resultado) {
         this.resultado = resultado;
     }
+
     public String getDescricao() {
         return descricao;
-        
     }
+
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
     public String getVitoriaKey() {
         return vitoriaKey;
     }
+
     public void setVitoriaKey(String vitoriaKey) {
         this.vitoriaKey = vitoriaKey;
     }

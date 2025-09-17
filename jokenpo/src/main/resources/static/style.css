@@ -7,7 +7,10 @@ body {
 /* Fundo da tela de início */
 body.tela-inicial {
     background: url('imagens/regras-bg.png') no-repeat center center fixed;
-    background-size: cover;
+    background-size: contain;
+    background-color: rgb(22, 137, 45);
+    height: 100vh;
+    margin: 0;
 }
 
 /* Fundo da tela de jogo */
@@ -23,16 +26,18 @@ body.tela-jogo {
 #inicio {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end; 
     height: 100vh;
     text-align: center;
     color: white;
+    
+
 }
 
 .inicio-container {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 3rem;
-    border-radius: 15px;
+    padding: 1rem 1rem;
+    border-radius: 10px;
 }
 
 #btn-iniciar {
@@ -53,7 +58,7 @@ body.tela-jogo {
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(22, 137, 45);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -68,7 +73,7 @@ body.tela-jogo {
 .btn-jogada:hover { background-color: #0056b3; }
 .resultado-area { margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 5px; }
 .jogadas-display { display: flex; justify-content: space-around; margin-bottom: 1rem; }
-#vencedor { font-size: 1.8rem; color: #28a745; }
-#descricao-resultado { font-style: italic; color: #555; min-height: 20px; }
+#vencedor { font-size: 1.8rem; color: #a72e28; }
+#descricao-resultado { font-style: italic; color: #ffffff; min-height: 20px; }
 .imagem-container { height: 150px; display: flex; justify-content: center; align-items: center; margin-top: 1rem; }
-#imagem-resultado { max-width: 100%; max-height: 150px; }
+#imagem-resultado { max-width: 100%; max-height: 160px; }

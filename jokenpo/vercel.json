@@ -1,23 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "pom.xml",
-            "use": "@vercel/java"
-        },
-        {
-            "src": "/src/main/resources/static/**",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "pom.xml"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/src/main/resources/static/$1"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "pom.xml",
+      "use": "@vercel/java"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "pom.xml"
+    }
+  ]
 }

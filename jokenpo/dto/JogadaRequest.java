@@ -1,8 +1,10 @@
 package br.com.pptls.jokenpo.dto;
 
-
 public class JogadaRequest {
     private String jogador;
+
+    public JogadaRequest() {
+    }
 
     // Getters e Setters
     public String getJogador() {
@@ -12,5 +14,4 @@ public class JogadaRequest {
     public void setJogador(String jogador) {
         this.jogador = jogador;
     }
-    
 }

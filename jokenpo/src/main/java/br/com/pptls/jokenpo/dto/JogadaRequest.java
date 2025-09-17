@@ -4,6 +4,8 @@ public class JogadaRequest {
     private String jogador;
 
     public JogadaRequest() {
+    
+
     }
 
     // Getters e Setters

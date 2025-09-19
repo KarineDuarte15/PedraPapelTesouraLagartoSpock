@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "pom.xml",
-            "use": "https://github.com/dferrand/vercel-java-springboot",
+            "use": "git+https://github.com/dferrand/vercel-java-springboot.git",
             "config": {
                 "serverPort": "8080"
             }

@@ -1,15 +1,18 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "pom.xml",
-      "use": "vercel-java"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "pom.xml"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "pom.xml",
+            "use": "https://github.com/dferrand/vercel-java-springboot",
+            "config": {
+                "serverPort": "8080"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "pom.xml"
+        }
+    ]
 }

@@ -17,7 +17,7 @@ public enum Jogada {
     );
 
     /**
-     * Compara a jogada atual (this) com a jogada do oponente.
+    
      * @param oponente A jogada do outro jogador.
      * @return 1 se esta jogada vence, -1 se perde, 0 se empata.
      */
